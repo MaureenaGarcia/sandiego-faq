@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>San Diego Home Affordability FAQ | Maureena Garcia, Realtor | Realty of America</title>
+<meta name="description" content="How much income do you need to buy a home in San Diego? Maureena Garcia, San Diego Realtor at Realty of America, answers top buyer affordability questions for 2026.">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #1B2B5E;
+    --navy-light: #2C3E7A;
+    --teal: #2DC99A;
+    --teal-light: #E6F9F3;
+    --teal-text: #0F6E56;
+    --warm: #F7F5F0;
+    --text: #1A1A2E;
+    --muted: #5A6075;
+    --border: rgba(27,43,94,0.12);
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+  body { font-family: 'Georgia', serif; background: #fff; color: var(--text); line-height: 1.7; }
+  
+  /* NAV */
+  nav { background: var(--navy); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+  nav img.logo { height: 42px; filter: brightness(0) invert(1); }
+  nav .nav-contact { display: flex; align-items: center; gap: 1.5rem; }
+  nav .nav-contact a { color: rgba(255,255,255,0.85); font-family: 'Arial', sans-serif; font-size: 13px; text-decoration: none; }
+  nav .nav-contact a:hover { color: var(--teal); }
+  nav .nav-cta { background: var(--teal); color: #fff; font-family: 'Arial', sans-serif; font-size: 13px; font-weight: bold; padding: 8px 18px; border-radius: 6px; text-decoration: none; }
+  nav .nav-cta:hover { background: #25b389; }
+
+  /* HERO */
+  .hero { background: var(--navy); padding: 4rem 2rem 0; display: flex; align-items: flex-end; justify-content: center; gap: 4rem; max-width: 1100px; margin: 0 auto; }
+  .hero-text { padding-bottom: 3rem; max-width: 560px; }
+  .hero-eyebrow { font-family: 'Arial', sans-serif; font-size: 12px; font-weight: bold; letter-spacing: .1em; text-transform: uppercase; color: var(--teal); margin-bottom: 1rem; }
+  .hero h1 { font-size: clamp(26px, 3.5vw, 42px); font-weight: normal; color: #fff; line-height: 1.25; margin-bottom: 1.25rem; }
+  .hero h1 em { color: var(--teal); font-style: normal; }
+  .hero-sub { font-family: 'Arial', sans-serif; font-size: 15px; color: rgba(255,255,255,0.7); line-height: 1.7; margin-bottom: 1.75rem; }
+  .hero-stats { display: flex; gap: 2rem; flex-wrap: wrap; }
+  .hero-stat { }
+  .hero-stat .val { font-size: 22px; font-weight: bold; color: var(--teal); font-family: 'Arial', sans-serif; }
+  .hero-stat .lbl { font-size: 11px; color: rgba(255,255,255,0.55); font-family: 'Arial', sans-serif; text-transform: uppercase; letter-spacing: .06em; margin-top: 2px; }
+  .hero-photo { flex-shrink: 0; }
+  .hero-photo img { display: block; width: 280px; height: 360px; object-fit: cover; object-position: top; border-radius: 12px 12px 0 0; }
+
+  /* AGENT CARD */
+  .agent-bar { background: var(--warm); border-bottom: 1px solid var(--border); }
+  .agent-bar-inner { max-width: 1100px; margin: 0 auto; padding: 1.25rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .agent-info { display: flex; align-items: center; gap: 1rem; }
+  .agent-info img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; object-position: top; border: 2px solid var(--teal); }
+  .agent-info .name { font-family: 'Arial', sans-serif; font-size: 15px; font-weight: bold; color: var(--navy); }
+  .agent-info .title { font-family: 'Arial', sans-serif; font-size: 12px; color: var(--muted); }
+  .agent-info .dre { font-family: 'Arial', sans-serif; font-size: 11px; color: var(--muted); margin-top: 1px; }
+  .agent-links { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+  .agent-links a { font-family: 'Arial', sans-serif; font-size: 13px; color: var(--navy); text-decoration: none; display: flex; align-items: center; gap: 5px; }
+  .agent-links a:hover { color: var(--teal-text); }
+  .agent-links .sep { color: var(--border); }
+
+  /* MAIN */
+  main { max-width: 860px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+
+  /* STATS GRID */
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 3rem; }
+  .stat-card { background: var(--warm); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 1rem 1.25rem; }
+  .stat-card .sc-label { font-family: 'Arial', sans-serif; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+  .stat-card .sc-val { font-family: 'Arial', sans-serif; font-size: 20px; font-weight: bold; color: var(--navy); }
+  .stat-card .sc-note { font-family: 'Arial', sans-serif; font-size: 11px; color: var(--muted); margin-top: 3px; }
+
+  /* SECTION HEADINGS */
+  h2.section-h { font-family: 'Arial', sans-serif; font-size: 11px; font-weight: bold; letter-spacing: .1em; text-transform: uppercase; color: var(--teal-text); border-bottom: 2px solid var(--teal); padding-bottom: 6px; margin: 2.5rem 0 1rem; }
+
+  /* FAQ */
+  .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; overflow: hidden; }
+  .faq-btn { width: 100%; text-align: left; background: #fff; border: none; cursor: pointer; padding: 1.1rem 1.25rem; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .faq-btn:hover { background: var(--warm); }
+  h3.faq-q { font-family: 'Arial', sans-serif; font-size: 15px; font-weight: bold; color: var(--navy); line-height: 1.4; }
+  .faq-chevron { font-size: 20px; color: var(--muted); flex-shrink: 0; transition: transform .22s; display: inline-block; }
+  .faq-item.open .faq-chevron { transform: rotate(45deg); }
+  .faq-body { display: none; padding: 0 1.25rem 1.25rem; border-top: 1px solid var(--border); }
+  .faq-item.open .faq-body { display: block; }
+  .faq-body p { font-size: 15px; color: #3A3A4A; line-height: 1.8; margin-top: .85rem; }
+  .faq-body h4 { font-family: 'Arial', sans-serif; font-size: 13px; font-weight: bold; color: var(--navy); margin-top: 1.1rem; margin-bottom: 2px; }
+  .hl { background: var(--teal-light); color: var(--teal-text); font-family: 'Arial', sans-serif; font-weight: bold; padding: 1px 7px; border-radius: 4px; font-size: 14px; }
+  .tip { background: var(--warm); border-left: 3px solid var(--teal); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: .75rem 1rem; margin: .85rem 0; font-family: 'Arial', sans-serif; font-size: 13px; color: var(--muted); line-height: 1.65; }
+  .tip strong { color: var(--navy); }
+  .pills { display: flex; flex-wrap: wrap; gap: 6px; margin: .75rem 0; }
+  .pill { background: var(--teal-light); color: var(--teal-text); font-family: 'Arial', sans-serif; font-size: 12px; font-weight: bold; padding: 4px 11px; border-radius: 20px; }
+  .pill.navy { background: #E8EAEF; color: var(--navy); }
+  .pill.amber { background: #FEF3E2; color: #7A4A0A; }
+  .mini-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin: .85rem 0; }
+  .mini-card { background: var(--warm); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: .7rem 1rem; }
+  .mini-card .mc-lbl { font-family: 'Arial', sans-serif; font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+  .mini-card .mc-val { font-family: 'Arial', sans-serif; font-size: 15px; font-weight: bold; color: var(--navy); }
+  .mini-card .mc-note { font-family: 'Arial', sans-serif; font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  /* CTA */
+  .cta-block { background: var(--navy); border-radius: var(--radius); padding: 2.5rem; margin-top: 3rem; display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  .cta-block img.cta-photo { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; object-position: top; border: 3px solid var(--teal); flex-shrink: 0; }
+  .cta-text { flex: 1; min-width: 220px; }
+  .cta-text h2 { font-family: 'Arial', sans-serif; font-size: 20px; font-weight: bold; color: #fff; margin-bottom: 6px; }
+  .cta-text p { font-family: 'Arial', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.6; }
+  .cta-actions { display: flex; flex-direction: column; gap: 10px; flex-shrink: 0; }
+  .cta-actions a { display: block; text-align: center; font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; padding: 10px 22px; border-radius: 6px; text-decoration: none; }
+  .cta-primary { background: var(--teal); color: #fff; }
+  .cta-primary:hover { background: #25b389; }
+  .cta-secondary { background: transparent; border: 1px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.85); }
+  .cta-secondary:hover { border-color: var(--teal); color: var(--teal); }
+
+  /* FOOTER */
+  footer { background: var(--warm); border-top: 1px solid var(--border); padding: 2rem; text-align: center; }
+  footer img.logo-footer { height: 36px; margin-bottom: .75rem; opacity: 0.75; }
+  footer p { font-family: 'Arial', sans-serif; font-size: 12px; color: var(--muted); line-height: 1.7; }
+  footer a { color: var(--navy); }
+
+  @media (max-width: 700px) {
+    .hero { flex-direction: column; gap: 2rem; padding-bottom: 0; }
+    .hero-photo img { width: 100%; height: 260px; border-radius: 12px 12px 0 0; }
+    nav .nav-contact { display: none; }
+    .agent-bar-inner { flex-direction: column; align-items: flex-start; }
+    .cta-block { flex-direction: column; text-align: center; }
+    .cta-actions { width: 100%; }
+    .cta-actions a { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <img class="logo" src="https://static.wixstatic.com/media/288121_dde395519cf745379b2f79087120dbda~mv2.png/v1/crop/x_0,y_82,w_3000,h_1337/fill/w_300,h_134,al_c,q_85/ROA%20Logo%20with%20TM_Full%20Mark%20Color_edited_.png" alt="Realty of America">
+  <div class="nav-contact">
+    <a href="tel:8585188483">(858) 518-8483</a>
+    <a href="mailto:maureena@roacalifornia.com">maureena@roacalifornia.com</a>
+    <a class="nav-cta" href="https://maureenarealtor.com">maureenarealtor.com</a>
+  </div>
+</nav>
+
+<div style="background:var(--navy);">
+  <div class="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow">San Diego buyer guide &mdash; 2026</div>
+      <h1>How much income do you need to buy a home in <em>San Diego</em>?</h1>
+      <p class="hero-sub">San Diego is one of the most expensive housing markets in the country. Get straight answers to the affordability questions every buyer is asking right now — from income thresholds and down payments to loan programs and neighborhood pricing.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="val">$1.05M</div><div class="lbl">Median home price</div></div>
+        <div class="hero-stat"><div class="val">$274–294K</div><div class="lbl">Income needed (median home)</div></div>
+        <div class="hero-stat"><div class="val">~$200K</div><div class="lbl">Income needed (starter home)</div></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://static.wixstatic.com/media/288121_7030ddb79a444e1cac2e9e335c620a53~mv2.png/v1/fill/w_400,h_400,al_c,q_85/RachaelMariePhotography-M-76.png" alt="Maureena Garcia, San Diego Realtor">
+    </div>
+  </div>
+</div>
+
+<div class="agent-bar">
+  <div class="agent-bar-inner">
+    <div class="agent-info">
+      <img src="https://static.wixstatic.com/media/288121_7030ddb79a444e1cac2e9e335c620a53~mv2.png/v1/fill/w_400,h_400,al_c,q_85/RachaelMariePhotography-M-76.png" alt="Maureena Garcia, San Diego Realtor">
+      <div>
+        <div class="name">Maureena Garcia</div>
+        <div class="title">Realtor &mdash; Realty of America | San Diego, CA</div>
+        <div class="dre">DRE #02004454</div>
+      </div>
+    </div>
+    <div class="agent-links">
+      <a href="tel:8585188483">&#9990; (858) 518-8483</a>
+      <span class="sep">|</span>
+      <a href="mailto:maureena@roacalifornia.com">&#9993; maureena@roacalifornia.com</a>
+      <span class="sep">|</span>
+      <a href="https://maureenarealtor.com">&#127760; maureenarealtor.com</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <div class="stats-grid">
+    <div class="stat-card"><div class="sc-label">Median home price</div><div class="sc-val">$1,050,000</div><div class="sc-note">Single-family, 2026 (CAR)</div></div>
+    <div class="stat-card"><div class="sc-label">Income to buy median home</div><div class="sc-val">$274–294K/yr</div><div class="sc-note">Zillow / ConsumerAffairs 2026</div></div>
+    <div class="stat-card"><div class="sc-label">Income to buy starter home</div><div class="sc-val">~$200K/yr</div><div class="sc-note">Starter home ~$650K (Redfin)</div></div>
+    <div class="stat-card"><div class="sc-label">Median household income</div><div class="sc-val">$103,000/yr</div><div class="sc-note">San Diego County 2026</div></div>
+    <div class="stat-card"><div class="sc-label">Conforming loan limit</div><div class="sc-val">$1,104,000</div><div class="sc-note">San Diego County 2026</div></div>
+    <div class="stat-card"><div class="sc-label">Area median income (AMI)</div><div class="sc-val">$98,657</div><div class="sc-note">HUD 2026 &mdash; SD County</div></div>
+  </div>
+
+  <h2 class="section-h">Understanding San Diego home prices</h2>
+
+  <div class="faq-item open">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="true">
+      <h3 class="faq-q">What is the median home price in San Diego in 2026?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <p>The median single-family home price in San Diego County is approximately <span class="hl">$1,050,000</span> as of early 2026, according to the California Association of Realtors. Some data sources, including Zillow, place the figure closer to $965,000 depending on whether condominiums and attached homes are included.</p>
+      <p>San Diego has firmly crossed the seven-figure threshold, ranking among the five most expensive major metropolitan areas in the country alongside San Francisco, Los Angeles, Seattle, and New York. Home values have appreciated 8–12% annually over the past several years, driven by constrained land supply, strong employment, and persistent demand.</p>
+      <div class="mini-grid">
+        <div class="mini-card"><div class="mc-lbl">Entry-level / starter home</div><div class="mc-val">~$650,000</div><div class="mc-note">Condo, townhome, or inland SFR</div></div>
+        <div class="mini-card"><div class="mc-lbl">Median single-family home</div><div class="mc-val">~$1,050,000</div><div class="mc-note">County-wide median</div></div>
+        <div class="mini-card"><div class="mc-lbl">Coastal / luxury home</div><div class="mc-val">$2M–$5M+</div><div class="mc-note">La Jolla, Del Mar, Coronado</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">Why are San Diego home prices so high?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <p>San Diego's elevated prices reflect a structural supply-demand imbalance rooted in geography, employment, and regulation.</p>
+      <h4>Geographic supply constraints</h4>
+      <p>San Diego is bounded by the Pacific Ocean to the west, Mexico to the south, the Cleveland National Forest to the east, and Camp Pendleton to the north. These hard limits mean the region cannot sprawl outward the way Phoenix or Las Vegas can, and developable infill land is expensive and scarce.</p>
+      <h4>Strong, diversified economy</h4>
+      <p>The San Diego regional economy is anchored by the U.S. Navy and Marine Corps, a world-class biotech and life sciences cluster centered on Torrey Pines Mesa and Sorrento Valley, a growing technology sector, the University of California San Diego, and tourism. These industries attract well-compensated households who compete for limited inventory.</p>
+      <h4>Slow new housing production</h4>
+      <p>California's permitting environment, environmental review requirements, and local zoning constraints have historically limited new housing production relative to demand growth, keeping vacancy rates low and sustaining upward price pressure.</p>
+    </div>
+  </div>
+
+  <h2 class="section-h">Income requirements to qualify for a mortgage</h2>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">How much income do I need to buy a home in San Diego?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <p>The income required depends on the purchase price, down payment, loan type, current interest rate, and your existing monthly debt obligations. Most lenders apply the <span class="hl">28/36 rule</span>: housing costs should not exceed 28% of gross monthly income, and total debt payments should not exceed 36%.</p>
+      <p>Based on current median prices and mortgage rates in 2026:</p>
+      <div class="mini-grid">
+        <div class="mini-card"><div class="mc-lbl">Starter home (~$650K)</div><div class="mc-val">~$200,000/yr</div><div class="mc-note">~$5,000/mo mortgage (Redfin)</div></div>
+        <div class="mini-card"><div class="mc-lbl">Median home (~$1.05M)</div><div class="mc-val">$274–294K/yr</div><div class="mc-note">~$5,757/mo, 10% down (Zillow)</div></div>
+      </div>
+      <div class="tip"><strong>The affordability gap:</strong> San Diego's median household income is ~$103,000 — roughly one-third of what's needed to comfortably afford a median-priced home. Only about 1.6% of homes are considered affordable to households earning the county median income.</div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">Can a dual-income household afford to buy in San Diego?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <p>Dual-income households are far better positioned than single earners. Two professionals each earning $100,000–$150,000 (combined $200,000–$300,000) fall within the qualifying range for starter to median-priced homes, provided they carry manageable student loan and consumer debt levels.</p>
+      <p>Lenders evaluate both borrowers' debt-to-income ratios individually and collectively. Significant existing debt — auto loans, student loans, credit cards — can reduce purchasing power even when combined income appears sufficient.</p>
+      <div class="tip"><strong>My recommendation:</strong> Get a full pre-approval (not just a pre-qualification) before house hunting. In San Diego's competitive market, a pre-approval letter showing a verified income and credit review gives sellers confidence and strengthens your offer significantly.</div>
+    </div>
+  </div>
+
+  <h2 class="section-h">Down payments and loan options</h2>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">How much do I need for a down payment in San Diego?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <p>Minimum down payment depends on the loan type you qualify for. On a <span class="hl">$1,050,000</span> median-priced home:</p>
+      <div class="pills">
+        <span class="pill">VA loan: $0 down</span>
+        <span class="pill">FHA: 3.5% = ~$36,750</span>
+        <span class="pill">Conventional 5%: ~$52,500</span>
+        <span class="pill">Conventional 20%: ~$210,000</span>
+        <span class="pill">Jumbo: 10–20%+</span>
+      </div>
+      <p>Zillow estimates it could take nearly 17 years for a household at the county median income to save a 10% down payment at current savings rates — which is why down payment assistance programs and family gift funds are so important for first-time buyers in this market.</p>
+      <div class="tip"><strong>PMI note:</strong> Putting less than 20% down on a conventional loan requires private mortgage insurance (PMI), typically $150–$400/month. Many San Diego buyers accept PMI to preserve liquidity, particularly since home equity tends to grow over time and PMI can be removed once you reach 20% equity.</div>
+      <h4>2026 San Diego conforming loan limit</h4>
+      <p>The conforming loan limit in San Diego County is <span class="hl">$1,104,000</span> in 2026. Loans at or below this limit qualify for conventional Fannie Mae/Freddie Mac financing with standard underwriting. Above this amount, buyers need a jumbo loan, which requires higher credit scores (typically 720+), larger down payments, and substantial cash reserves.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">What mortgage loan types are available to San Diego buyers?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <h4>Conventional loans</h4>
+      <p>The most common loan type in San Diego. Requires 620+ credit score (720+ for best rates), 5% down on primary residences, and DTI below 45%. Best for buyers with strong W-2 income and established credit.</p>
+      <h4>FHA loans</h4>
+      <p>Backed by the Federal Housing Administration. Allows credit scores as low as 580 with 3.5% down. Requires mortgage insurance premium (MIP) for the life of the loan unless refinanced. The FHA loan limit in San Diego County is $1,149,825 in 2026. Popular with first-time buyers and those rebuilding credit.</p>
+      <h4>VA loans</h4>
+      <p>Available to active-duty military, veterans, and eligible surviving spouses. No down payment required, no PMI, and competitive rates. Given San Diego's large military community — home to Naval Base San Diego, MCAS Miramar, Marine Corps Base Camp Pendleton, and multiple other installations — VA financing is especially relevant here.</p>
+      <h4>Jumbo loans</h4>
+      <p>Required above the $1,104,000 conforming limit. Common in coastal neighborhoods, La Jolla, Del Mar, and Rancho Santa Fe. Lenders typically require 720+ credit, 10–20% down, and 12 months of mortgage payments in reserves.</p>
+      <h4>House-hacking with FHA financing</h4>
+      <p>A growing strategy: purchase a 2–4 unit property with FHA financing (3.5% down), live in one unit, and rent the others. Rental income offsets a significant portion of the mortgage — a practical entry point in neighborhoods like North Park, City Heights, and Normal Heights.</p>
+    </div>
+  </div>
+
+  <h2 class="section-h">Neighborhoods and price ranges</h2>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">Which San Diego neighborhoods are most affordable in 2026?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <p>Several neighborhoods offer median prices meaningfully below the county median, with strong long-term appreciation potential:</p>
+      <div class="mini-grid">
+        <div class="mini-card"><div class="mc-lbl">City Heights</div><div class="mc-val">~$650,000</div><div class="mc-note">+11.4% YoY — fast appreciation</div></div>
+        <div class="mini-card"><div class="mc-lbl">Logan Heights</div><div class="mc-val">~$665,000</div><div class="mc-note">Near downtown, strong upside</div></div>
+        <div class="mini-card"><div class="mc-lbl">National City</div><div class="mc-val">~$660,000</div><div class="mc-note">Near Coronado and downtown SD</div></div>
+        <div class="mini-card"><div class="mc-lbl">Clairemont Mesa</div><div class="mc-val">~$700,000</div><div class="mc-note">Established, centrally located</div></div>
+        <div class="mini-card"><div class="mc-lbl">Chula Vista</div><div class="mc-val">~$730,000</div><div class="mc-note">South County, newer builds</div></div>
+        <div class="mini-card"><div class="mc-lbl">El Cajon</div><div class="mc-val">~$720,000</div><div class="mc-note">East County, more inventory</div></div>
+      </div>
+      <div class="tip"><strong>For comparison:</strong> North Park single-family homes run ~$1,125,000; Pacific Beach condos ~$895,000; La Jolla and Del Mar homes regularly exceed $2–$3 million.</div>
+      <p>Buyers willing to look at Chula Vista, El Cajon, Santee, and Spring Valley often find more inventory, newer construction, and better price-per-square-foot than comparable urban neighborhoods — with more seller concessions in the current normalizing market.</p>
+    </div>
+  </div>
+
+  <h2 class="section-h">First-time buyer assistance programs</h2>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">What down payment assistance programs are available in San Diego?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <h4>Access Granted — San Diego Foundation</h4>
+      <p>Designed for buyers earning up to 120% of the Area Median Income (<span class="hl">~$118,000 in 2026</span>). Provides grants of up to $40,000 at closing. When stacked with other programs, total assistance can reach $60,000–$70,000 — a meaningful contribution toward down payment and closing costs.</p>
+      <h4>CalHFA — California Housing Finance Agency</h4>
+      <p>State-level deferred down payment assistance loans (no monthly payment — due at sale or refinance) paired with below-market first mortgages. Can be combined with FHA or conventional financing. Income and purchase price limits apply; San Diego's limits are adjusted upward as a high-cost area.</p>
+      <h4>San Diego Housing Commission (SDHC)</h4>
+      <p>Offers the Homebuyer Assistance Program providing deferred-payment loans for down payment and closing costs for buyers purchasing within City of San Diego limits. Targeted at low-to-moderate income buyers purchasing primary residences.</p>
+      <div class="tip"><strong>2026 Area Median Income (AMI), San Diego County:</strong> $98,657 per HUD. Most programs use 80%, 100%, or 120% of AMI as eligibility thresholds. Buyers above these limits may still qualify for CalHFA, which uses higher income limits in high-cost counties.</div>
+      <div class="pills">
+        <span class="pill">No repayment until sale or refi</span>
+        <span class="pill">Programs can be stacked</span>
+        <span class="pill">City + County + State options</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">Who qualifies as a first-time homebuyer in California?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <p>Under California and federal program definitions, a first-time homebuyer is someone who has <span class="hl">not owned a primary residence in the past three years</span>. This means buyers who previously owned a home but have rented for three or more years may qualify again — broader than most people expect.</p>
+      <p>The three-year window applies per borrower. Displaced homemakers and single parents who owned a home jointly with a former spouse may also qualify under certain programs. Eligibility rules vary by program and are updated annually, so always confirm directly with the program administrator or with a knowledgeable local agent.</p>
+    </div>
+  </div>
+
+  <h2 class="section-h">Market conditions and timing</h2>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">Is the San Diego housing market slowing down in 2026?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <p>The San Diego market entered 2026 in a transitional phase — still seller-favoring in most neighborhoods, but showing normalization not seen since 2019. Active listings are up approximately <span class="hl">14% year-over-year</span>, days on market have increased, and some sellers are offering concessions for the first time in several years.</p>
+      <p>Home values have not declined in any meaningful way — prices remain near all-time highs. The market is shifting from "extreme seller's market" toward a more balanced one, giving buyers more options and more negotiating leverage.</p>
+      <div class="tip"><strong>Outlook:</strong> Redfin economists forecast gradual affordability improvement as wages rise and price growth decelerates. Mortgage rate relief would be a significant catalyst — each 1% rate reduction meaningfully improves monthly purchasing power.</div>
+      <div class="pills">
+        <span class="pill amber">Watch: mortgage rate direction</span>
+        <span class="pill amber">Watch: inventory by neighborhood</span>
+        <span class="pill amber">Watch: seller concession trends</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-btn" onclick="tog(this)" aria-expanded="false">
+      <h3 class="faq-q">What closing costs should San Diego buyers budget for?</h3>
+      <span class="faq-chevron">+</span>
+    </button>
+    <div class="faq-body">
+      <p>In addition to the down payment, buyers in San Diego should budget for closing costs of <span class="hl">2–5% of the purchase price</span>. On a $1,000,000 home, that's $20,000–$50,000 in additional upfront costs.</p>
+      <h4>Common closing cost components</h4>
+      <p><strong>Lender fees:</strong> Origination, underwriting, and any discount points. <strong>Title and escrow:</strong> Owner's and lender's title insurance, escrow fees, recording fees. <strong>Prepaid items:</strong> Property taxes (2–6 months upfront), first year homeowners insurance, prepaid interest. <strong>Transfer tax:</strong> California has no state-level real estate transfer tax, but San Diego County charges approximately .10 per ,000 of purchase price.</p>
+      <div class="tip"><strong>Prop 13:</strong> California property taxes are assessed at 1% of purchase price plus local assessments, and annual increases are capped at 2%. Your tax basis locks in at the purchase price — a significant long-term benefit in a market where values tend to appreciate steadily.</div>
+    </div>
+  </div>
+
+  <div class="cta-block">
+    <img class="cta-photo" src="https://static.wixstatic.com/media/288121_7030ddb79a444e1cac2e9e335c620a53~mv2.png/v1/fill/w_400,h_400,al_c,q_85/RachaelMariePhotography-M-76.png" alt="Maureena Garcia, San Diego Realtor">
+    <div class="cta-text">
+      <h2>Ready to explore your buying options?</h2>
+      <p>I'm Maureena Garcia, a San Diego Realtor with Realty of America. I help buyers navigate this market with honest guidance, deep local knowledge, and access to programs that can make homeownership more attainable than you think.</p>
+      <p style="margin-top:.5rem; font-size:13px; color:rgba(255,255,255,0.5);">DRE #02004454 &nbsp;&bull;&nbsp; (858) 518-8483 &nbsp;&bull;&nbsp; maureena@roacalifornia.com</p>
+    </div>
+    <div class="cta-actions">
+      <a class="cta-primary" href="https://maureenarealtor.com">Visit my website</a>
+      <a class="cta-secondary" href="tel:8585188483">Call (858) 518-8483</a>
+      <a class="cta-secondary" href="mailto:maureena@roacalifornia.com">Send an email</a>
+    </div>
+  </div>
+
+  <p style="font-family:'Arial',sans-serif;font-size:11px;color:var(--muted);margin-top:2rem;line-height:1.7;">Sources: Redfin (2026), Zillow (2026), ConsumerAffairs (May 2026), California Association of Realtors, HUD, San Diego Foundation, CalHFA, San Diego Housing Commission. All figures represent current market estimates and are subject to change. This guide is for informational purposes only and does not constitute financial or legal advice. Maureena Garcia, DRE #02004454, Realty of America.</p>
+
+</main>
+
+<footer>
+  <img class="logo-footer" src="https://static.wixstatic.com/media/288121_dde395519cf745379b2f79087120dbda~mv2.png/v1/crop/x_0,y_82,w_3000,h_1337/fill/w_300,h_134,al_c,q_85/ROA%20Logo%20with%20TM_Full%20Mark%20Color_edited_.png" alt="Realty of America">
+  <p>Maureena Garcia &nbsp;&bull;&nbsp; Realtor, Realty of America &nbsp;&bull;&nbsp; DRE #02004454<br>
+  <a href="tel:8585188483">(858) 518-8483</a> &nbsp;&bull;&nbsp; <a href="mailto:maureena@roacalifornia.com">maureena@roacalifornia.com</a> &nbsp;&bull;&nbsp; <a href="https://maureenarealtor.com">maureenarealtor.com</a><br>
+  &copy; 2026 Maureena Garcia. All rights reserved. Information deemed reliable but not guaranteed.</p>
+</footer>
+
+<script>
+function tog(btn) {
+  const item = btn.closest('.faq-item');
+  const open = item.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+}
+</script>
+</body>
+</html>
